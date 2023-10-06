@@ -1,0 +1,22 @@
+# Exclude Terraform state files
+terraform.tfstate
+terraform.tfstate.backup
+
+# Exclude Terraform lock file
+.terraform.lock.hcl
+
+# Exclude Terraform provider executable (specific pentru Windows_amd64)
+.terraform/providers/terraform-example.com/exampleprovider/example/1.0.0/windows_amd64/terraform-provider-example.exe
+
+# Exclude Terraform plugin cache (optional, dar adaugată pentru a evita includerea fișierelor binare din .terraform/plugins)
+.terraform/plugins
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
